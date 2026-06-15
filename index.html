@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+AI Heart Disease Predictor
+</title>
+
+<link rel="stylesheet"
+href="/static/style.css">
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+<h2>
+❤️ AI Heart Disease Predictor
+</h2>
+
+</nav>
+
+
+<div class="container">
+
+
+<h1>
+📋 Patient Details
+</h1>
+
+
+<p>
+Please enter patient information
+</p>
+
+
+
+<form action="/predict"
+method="POST">
+
+
+<div class="grid">
+
+
+
+<input name="age"
+placeholder="Age">
+
+
+<select name="sex">
+
+<option value="1">
+Male
+</option>
+
+<option value="0">
+Female
+</option>
+
+</select>
+
+
+
+<select name="cp">
+
+<option value="0">
+Typical Angina
+</option>
+
+<option value="1">
+Atypical Angina
+</option>
+
+<option value="2">
+Non Anginal
+</option>
+
+</select>
+
+
+
+<input name="trestbps"
+placeholder="Blood Pressure">
+
+
+
+<input name="chol"
+placeholder="Cholesterol">
+
+
+
+<select name="fbs">
+
+<option value="1">
+Yes
+</option>
+
+<option value="0">
+No
+</option>
+
+</select>
+
+
+
+<select name="restecg">
+
+<option value="0">
+Normal
+</option>
+
+<option value="1">
+ST Abnormality
+</option>
+
+</select>
+
+
+
+<input name="thalach"
+placeholder="Maximum Heart Rate">
+
+
+
+<select name="exang">
+
+<option value="1">
+Yes
+</option>
+
+<option value="0">
+No
+</option>
+
+</select>
+
+
+
+<input name="oldpeak"
+placeholder="Oldpeak">
+
+
+
+<select name="slope">
+
+<option value="2">
+Downsloping
+</option>
+
+<option value="1">
+Flat
+</option>
+
+</select>
+
+
+
+<select name="ca">
+
+<option value="0">
+0 vessels
+</option>
+
+<option value="1">
+1 vessel
+</option>
+
+</select>
+
+
+
+<select name="thal">
+
+<option value="3">
+Normal
+</option>
+
+<option value="7">
+Reversible defect
+</option>
+
+</select>
+
+
+
+</div>
+
+
+
+<button>
+
+Predict Heart Disease
+
+</button>
+
+
+
+</form>
+
+
+</div>
+
+
+</body>
+
+</html>
